@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>神仙未来</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+  <script src="node_modules\marked\lib\marked.js"></script>
+  <style>
+    h2,p {
+      text-align: center;
+      margin: 50px;
+      font-style: 
+    }
+
+    body{
+      background-color: ;
+    }
+    .jumbotron{
+        background-image: url(dota2.jpg);
+             background-position:50% 50%;
+             opacity: 0.8;
+    }
+    a{
+      color:#eee;
+    }
+    footer{
+      text-align: center;
+            font-family:Georgia, serif;
+    }
+  </style>
+</head>
+<body>
+<div id="nav">
+  <h1 class="left-nav">example</h1>
+  <h1 class="left-nav">example</h1>
+</div>
+<div id="content">
+  
+</div>
+  <p>神仙未来，</p>
+  <div class="col-lg-4 col-lg-offset-4">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="说出你的梦想">
+      <span class="input-group-btn">
+        <button class="btn btn-warning" type="button">走你！</button>
+      </span>
+    </div>
+  </div>
+  <br>
+  <br>
+<div class="jumbotron">
+  <h2>新的开局</h2>
+  <br>
+  <p id="random">...</p>
+  <p><a class="btn btn-danger btn-lg" href="#" role="button" onclick="random()">随机</a></p>
+</div>
+<footer>copyright © 2017 Gitblog By pxx</footer>
+<script>
+function random(){
+        var fortunes = [
+        "影魔",
+        "蓝猫",
+        "卡尔",
+        "痛苦女王",
+        "火女",
+        "龙骑",
+        "dp",
+        "血魔",
+        "火猫"]
+        var randomFortunes = fortunes[Math.floor(Math.random()*fortunes.length)]
+        document.getElementById('random').innerHTML =randomFortunes;
+  }
+$(document).ready(function(){
+  $('.left-nav').click(function(){
+    $('#content').load('README.md');
+  })
+});
+</script>
+</body>
+</html>
+
