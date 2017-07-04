@@ -40,8 +40,7 @@
         <button class="btn btn-warning" type="button">走你！</button>
       </span>
     </div>
-  </div>
-  <br>
+  </div>  <br>
   <br>
 <div class="jumbotron">
   <h2>新的开局</h2>
@@ -68,7 +67,9 @@ function random(){
         "火猫"]
         var randomFortunes = fortunes[Math.floor(Math.random()*fortunes.length)]
         document.getElementById('random').innerHTML =randomFortunes;
-  },
+  }
+</script>
+<script>
    var vm =new Vue({
   el: '#animated-number-demo',
   data: {
@@ -97,7 +98,7 @@ function random(){
     }
   }
 })
-</script>
+  </script>
 </body>
 </html>
 
