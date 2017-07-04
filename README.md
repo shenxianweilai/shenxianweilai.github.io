@@ -1,2 +1,2 @@
 # blog
-[hello](https://lin-xin.github.io/#)
+[hello](https://github.com/shenxianweilai/shenxianweilai.github.io/issues/1)
