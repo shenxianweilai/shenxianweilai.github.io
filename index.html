@@ -7,7 +7,7 @@
   <script src="https://unpkg.com/tween.js@16.3.4"></script>
   <script src="https://unpkg.com/vue"></script>
   <style>
-    h2,p {
+   input,p {
       text-align: center;
       margin: 50px;
       font-style: 
@@ -49,7 +49,7 @@
   <p><a class="btn btn-danger btn-lg" href="#" role="button" onclick="random()">随机</a></p>
 </div>
 <div id="animated-number-demo">
-  <input v-model.number="number" type="number" step="20">
+  <input v-model.number="number" type="number" step="20" class="form-control">
   <p>{{ animatedNumber }}</p>
 </div>
 <footer>copyright © 2017 Gitblog By pxx</footer>
