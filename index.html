@@ -7,15 +7,17 @@
   <script src="https://unpkg.com/tween.js@16.3.4"></script>
   <script src="https://unpkg.com/vue"></script>
   <style>
-   input,p {
+   p {
       text-align: center;
-      margin: 50px;
-      font-style: 
+      margin: 30px;
+    }
+    input{
+      text-align: center;
     }
 
     body{
-      background-color: ;
-    }
+      background-color: #ff9977;
+          }
     .jumbotron{
         background-image: url(dota2.jpg);
 
@@ -26,8 +28,11 @@
       color:#eee;
     }
     footer{
-      text-align: center;
-            font-family:Georgia, serif;
+      position: absolute;
+      left: 500px;
+      bottom: 0px;
+      font-family:Georgia, serif;
+      
     }
   </style>
  </head>
@@ -50,11 +55,14 @@
   <p id="random">...</p>
   <p><a class="btn btn-danger btn-lg" href="#" role="button" onclick="random()">随机</a></p>
 </div>
-<div id="animated-number-demo" class="col-sm-4 col-sm-offset-4">
-  <input v-model.number="number" type="number" step="20" class="form-control">
+<div id="animated-number-demo">
+ <div class="col-lg-4 col-lg-offset-4">
+   <input v-model.number="number" type="number" step="20" class="form-control">
+ </div>
+ <br>
   <p>{{ animatedNumber }}</p>
 </div>
-<footer>copyright © 2017 Gitblog By pxx</footer>
+<footer><p>copyright © 2017 Gitblog By pxx</p></footer>
 <script>
 function random(){
         var fortunes = [
