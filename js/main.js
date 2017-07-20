@@ -6,6 +6,8 @@
 	 	backBtn = $('.back-to-top'),
 	 	sidebar_trigger = $('#sidebar_trigger');
 
+
+
 	 	function showSidebar() {
 	 		mask.fadeIn();
 	 		sidebar.css('right', 0);
